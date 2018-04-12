@@ -51,32 +51,32 @@ Agrupa los selectores dentro de un mismo árbol
 IMPORTAR MI ESTRUCTURA EN EL FICHERO PRINCIPAL
 ================================================
 */
-@import 'settings/variables';
-@import 'tools/positions';
-@import 'tools/flex';
-@import 'tools/transitions';
-@import 'generic/reset';
-@import 'generic/lightbox';
-@import 'elements/body';
-@import 'elements/links';
-@import 'elements/main';
-@import 'elements/headings';
-@import 'elements/lists';
-@import 'elements/img';
-@import 'elements/strong';
-@import 'elements/paragraph';
-@import 'components/navigation';
-@import 'components/code';
-@import 'components/footer';
-@import 'components/list-inline';
-@import 'components/header';
-@import 'components/columns';
-@import 'components/container';
-@import 'components/alert-message';
-@import 'utilities/text-align';
-@import 'utilities/height';
-@import 'utilities/color';
-@import 'utilities/margin';
+@import 'settings/s.variables';
+@import 'tools/t.positions';
+@import 'tools/t.flex';
+@import 'tools/t.transitions';
+@import 'generic/g.reset';
+@import 'generic/g.lightbox';
+@import 'elements/e.body';
+@import 'elements/e.links';
+@import 'elements/e.main';
+@import 'elements/e.headings';
+@import 'elements/e.lists';
+@import 'elements/e.img';
+@import 'elements/e.strong';
+@import 'elements/e.paragraph';
+@import 'components/c.navigation';
+@import 'components/c.code';
+@import 'components/c.footer';
+@import 'components/c.list-inline';
+@import 'components/c.header';
+@import 'components/c.columns';
+@import 'components/c.container';
+@import 'components/c.alert-message';
+@import 'utilities/u.text-align';
+@import 'utilities/u.height';
+@import 'utilities/u.color';
+@import 'utilities/u.margin';
 
 
 
