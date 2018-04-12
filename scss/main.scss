@@ -1,0 +1,82 @@
+/* 
+================================================
+De momento, el formato original de SASS no lo vamos a usar,  
+no es compatible de manera directa con CSS. 
+Usaremos SCSS, una variante de SASS, similar y ofrece compatibilidad con CSS al 100%; 
+readmore: http://www.thesassway.com/editorial/sass-vs-scss-which-syntax-is-better 
+================================================
+*/
+
+/*
+================================================
+INSTALL MAC
+sudo gem install sass
+
+INSTALL LINUX
+sudo apt-get install ruby-full
+gem install sass
+================================================
+*/
+
+/*
+================================================
+COMPILAR 
+sass --watch directorioSASS/ficheroPrincipal.scss:directorioCSS/nombreFichero.css
+El nombre del fichero CSS se puede omitir y lo escribirá con el mismo nombre del fichero SCSS
+
+COMPILAR MINIFICADO (buena práctica)
+sass --watch directorioSASS/ficheroPrincipal.scss:directorioCSS/nombreFichero.css --style compressed
+El nombre del fichero CSS se puede omitir y lo escribirá con el mismo nombre del fichero SCSS
+================================================
+*/
+
+/*
+================================================
+SASS MAIN FEATURES - LO QUE DEBERÍAS USAR...
+================================================
+=======
+VARIABLES
+Almacena cualquier propiedad en un string - $miTexto -
+----> VER FICHERO variables.scss
+=======
+=======
+NESTING
+Agrupa los selectores dentro de un mismo árbol
+----> VER CUALQUIER FICHERO DE COMPONENTS
+=======
+*/
+
+/*
+================================================
+IMPORTAR MI ESTRUCTURA EN EL FICHERO PRINCIPAL
+================================================
+*/
+@import 'settings/variables';
+@import 'tools/positions';
+@import 'tools/flex';
+@import 'tools/transitions';
+@import 'generic/reset';
+@import 'generic/lightbox';
+@import 'elements/body';
+@import 'elements/links';
+@import 'elements/main';
+@import 'elements/headings';
+@import 'elements/lists';
+@import 'elements/img';
+@import 'elements/strong';
+@import 'elements/paragraph';
+@import 'components/navigation';
+@import 'components/code';
+@import 'components/footer';
+@import 'components/list-inline';
+@import 'components/header';
+@import 'components/columns';
+@import 'components/container';
+@import 'components/alert-message';
+@import 'utilities/text-align';
+@import 'utilities/height';
+@import 'utilities/color';
+@import 'utilities/margin';
+
+
+
