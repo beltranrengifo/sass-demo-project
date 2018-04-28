@@ -2,6 +2,7 @@
     height:$header-height;
     background: $dark-grey;
     color: $white;
+    z-index: 9;
     @extend %fixed-element;
     .logo {
         img {
@@ -11,5 +12,28 @@
     .column-wrapper {
         @extend %v-center;
         height: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #header{
+        .navigation {
+            .brand {
+                width: 70px;
+            }
+            .nav {
+                padding: 0 5px 0 0;
+                width: calc(100% - 70px);
+                ul {
+                    li {
+                        margin: 0 7px;
+                        a {
+                            font-size: .65em;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }
