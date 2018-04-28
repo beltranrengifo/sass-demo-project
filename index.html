@@ -82,43 +82,80 @@
                         </P>
                         <p>El nombre del fichero CSS se puede omitir, usará el mismo nombre del fichero SCSS</p>
                         <p>
-                            COMPILAR Y MINIFICAR<br>
+                            COMPILAR Y MINIFICAR
+                            <br>
                             <span class="code">sass --watch directorioSASS/ficheroPrincipal.scss:directorioCSS/nombreFichero.css --style compressed</span>
                         </p>
                     </div>
-                    <div class="col-4 m-top-50">
+                </div>
+                <div class="container">
+                    <div class="alert-message">
+                        <p>
+                            Si usas frameworks como Angular o middlewares para Express, el SASS es compilado directamente, te puedes saltar los pasos de INSTALAR y COMPILAR.
+                        </p>
+                        <a href="https://scotch.io/tutorials/using-sass-with-the-angular-cli" target="_blank">
+                            <small>https://scotch.io/tutorials/using-sass-with-the-angular-cli</small>
+                        </a><br>
+                        <a href="https://www.npmjs.com/package/node-sass-middleware" target="_blank">
+                            <small>https://www.npmjs.com/package/node-sass-middleware</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="column-wrapper">
+                    <div class="col-4">
                         <h2 class="bordered">
                             MAIN FEATURES
                         </h2>
                         <ul>
-                            <li><strong>Variables</strong>: ver fichero _variables.scss</li>
-                            <li><strong>Nesting</strong>: ver cualquier componente</li>
-                            <li><strong>Partials</strong>: recuerda usar '_' delante de los ficheros para no generar nuevas hojas de CSS y compilar a un único fichero. Es más limpio.</li>
-                            <li><strong>Imports</strong>: importa en tu fichero principal los parciales, recuerda que <strong>el orden importa</strong>, ver main.scss</li>
-                            <li><strong>Mixins</strong>: pequeños bloques reutilizables con parámetros, ver _transitions.scss</li>
-                            <li><strong>Herencia</strong>: propiedades que se pueden importar dentro de otros selectores, ver _flex.scss o _positions.scss</li>
+                            <li>
+                                <strong>Variables</strong>: ver fichero _variables.scss</li>
+                            <li>
+                                <strong>Nesting</strong>: ver cualquier componente</li>
+                            <li>
+                                <strong>Partials</strong>: recuerda usar '_' delante de los ficheros para no generar nuevas hojas
+                                de CSS y compilar a un único fichero. Es más limpio.</li>
+                            <li>
+                                <strong>Imports</strong>: importa en tu fichero principal los parciales, recuerda que
+                                <strong>el orden importa</strong>, ver main.scss</li>
+                            <li>
+                                <strong>Mixins</strong>: pequeños bloques reutilizables con parámetros, ver _transitions.scss</li>
+                            <li>
+                                <strong>Herencia</strong>: propiedades que se pueden importar dentro de otros selectores, ver _flex.scss
+                                o _positions.scss</li>
                         </ul>
                     </div>
-                    <div class="col-8 m-top-50">
+                    <div class="col-8">
                         <h2 class="bordered">
                             ESTRUCTURA DEL PROYECTO
                         </h2>
-                        <p>Siguiendo, a mi manera, los principios de la <a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/" target="_blank">metodología ITCSS</a>, me resulta útil organizarme los ficheros según su alcance y tipo de objeto al que modifican.</p>
+                        <p>Siguiendo, a mi manera, los principios de la
+                            <a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/" target="_blank">metodología ITCSS</a>, me resulta útil organizarme los ficheros según su alcance y tipo de objeto
+                            al que modifican.</p>
                         <p>De menor a mayor proridad:</p>
                         <ol>
-                            <li><strong>Settings</strong> para variables de color, tipografías...</li>
-                            <li><strong>Tools</strong> para mixins y extend/herencias</li>
-                            <li><strong>Generic</strong> para third-party, resets, etc.</li>
-                            <li><strong>Elements</strong> para las etiquetas HTML (body, p, a, etc)</li>
-                            <li><strong>Components</strong> para los elementos específicos que componen el site</li>
-                            <li><strong>Utilities</strong> para clases específicas con prioridad alta</li>
+                            <li>
+                                <strong>Settings</strong> para variables de color, tipografías...</li>
+                            <li>
+                                <strong>Tools</strong> para mixins y extend/herencias</li>
+                            <li>
+                                <strong>Generic</strong> para third-party, resets, etc.</li>
+                            <li>
+                                <strong>Elements</strong> para las etiquetas HTML (body, p, a, etc)</li>
+                            <li>
+                                <strong>Components</strong> para los elementos específicos que componen el site</li>
+                            <li>
+                                <strong>Utilities</strong> para clases específicas con prioridad alta</li>
                         </ol>
                         <div class="column-wrapper m-top-20">
                             <div class="col-4 editor-bg-color">
-                                <a href="img/sass_vert.jpg" data-lightbox="sass_vert" data-title="Project structure"><img src="img/sass_vert.jpg" alt="SCSS"></a>
+                                <a href="img/sass_vert.jpg" data-lightbox="sass_vert" data-title="Project structure">
+                                    <img src="img/sass_vert.jpg" alt="SCSS">
+                                </a>
                             </div>
                             <div class="col-8 editor-bg-color">
-                                <a href="img/sass_sq.jpg" data-lightbox="sass_sq" data-title="Project structure"><img src="img/sass_sq.jpg" alt="SCSS"></a>
+                                <a href="img/sass_sq.jpg" data-lightbox="sass_sq" data-title="Project structure">
+                                    <img src="img/sass_sq.jpg" alt="SCSS">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -131,7 +168,9 @@
                     <p>
                         Clona el repo y echa un ojo al proyecto
                     </p>
-                    <a href="https://github.com/beltranrengifo/sass-demo-project.git" target="_blank"><small>https://github.com/beltranrengifo/sass-demo-project.git</small></a>
+                    <a href="https://github.com/beltranrengifo/sass-demo-project.git" target="_blank">
+                        <small>https://github.com/beltranrengifo/sass-demo-project.git</small>
+                    </a>
                 </div>
             </div>
         </section>
